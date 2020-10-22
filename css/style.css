@@ -7,29 +7,39 @@
     background: #4F4F4F;
 }
 
-.container {
+.navbar-content {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    grid-gap: 10px;
     align-items: center;
-    background: yellow;
+}
+
+.navbar-content ul {
+    justify-self: end;
+}
+
+.container {
     max-width: 820px;
     margin: auto;
 }
 
 ul.navbar_itens {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
     justify-content: space-between;
-    background: red;
+    width: 350px;
 }
 
 .navbar_itens li {
     list-style: none;
     text-align: right;
-    background: #ccc;
+    /* background: #ccc; */
 }
 
 .navbar_logo,
 .navbar_itens a {
     text-decoration: none;
+    color: #fff;
+    font-weight: bold;
 }
