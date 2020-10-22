@@ -9,18 +9,18 @@ body {
     height: 500px;
 }
 
-.navbar {
+.header_navbar {
     background: #4F4F4F;
 }
 
-.navbar-content {
+.navbar {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-gap: 10px;
     align-items: center;
 }
 
-.navbar-content ul {
+.navbar ul {
     justify-self: end;
 }
 
@@ -29,7 +29,7 @@ body {
     margin: auto;
 }
 
-ul.navbar_itens {
+ul.navbar_items {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
@@ -37,14 +37,12 @@ ul.navbar_itens {
     width: 350px;
 }
 
-.navbar_itens li {
+.navbar_items li {
     list-style: none;
-    text-align: right;
-    /* background: #ccc; */
 }
 
 .navbar_logo,
-.navbar_itens a {
+.navbar_items a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
