@@ -87,3 +87,7 @@ ul.navbar_items {
 .profile_footer p {
     line-height: .4em;
 }
+
+.challenges {
+    padding: 35px 0;
+}
