@@ -86,12 +86,17 @@ ul.navbar_items {
 
 /* MAIN */
 .main {
-    padding: 25px 0;
+    padding: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+.main_item {
+    margin: 50px;
+}
+
 .main_item .title {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 .challenges {
