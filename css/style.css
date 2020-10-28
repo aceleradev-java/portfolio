@@ -43,7 +43,7 @@ ul.navbar_items {
     font-weight: bold;
 }
 
-.header_body {
+.header_body, .footer {
     background: #7800FF;
     display: grid;
     justify-content: center;
@@ -149,4 +149,27 @@ ul.navbar_items {
     font-size: 2.5em;
     font-weight: bold;
     color: #4F4F4F;
+}
+
+/* FOOTER */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
 }
