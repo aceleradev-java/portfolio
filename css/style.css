@@ -154,16 +154,21 @@ ul.navbar_items {
 /* FOOTER */
 
 .footer {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
     margin: 0;
     padding: 0;
+    min-height: 100px;
+    align-items: center;
+}
+
+.footer .container {
+    width: 100%;
 }
 
 .footer_nav {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     list-style: none;
     padding: 0;
 }
