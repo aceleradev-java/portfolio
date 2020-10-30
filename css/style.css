@@ -64,7 +64,7 @@ ul.navbar_items {
 }
 
 .subtitle {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .profile_picture img {
@@ -76,12 +76,12 @@ ul.navbar_items {
 .profile_footer {
     font-weight: bold;
     font-size: 24px;
-    margin: 0;
+    margin: -20px 0 0;
     padding: 0;
 }
 
 .profile_footer p {
-    line-height: .4em;
+    line-height: 1.2em;
 }
 
 /* MAIN */
