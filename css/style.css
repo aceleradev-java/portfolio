@@ -95,6 +95,12 @@ ul.navbar_items {
     margin: 50px;
 }
 
+.aceleradev p {
+    font-size: 1.4em;
+    color: #aaa;
+    font-weight: 600;
+}
+
 .main_item .title {
     margin-bottom: 50px;
 }
