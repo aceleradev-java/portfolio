@@ -161,32 +161,32 @@ ul.navbar_items {
 
 /* FOOTER */
 .footer {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    height: 10rem;
-    background: #7800FF;
-    padding: 25px;
-    clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
-}
-
-.footer .container {
-    width: 100%;
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
 }
 
 .footer_nav {
+    background: #7800FF;
+    padding: 10rem 5rem 2rem;
+}
+
+.navbar-footer {
     list-style: none;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
-    padding-top: 5rem;
-    padding-left: 0;
 }
 
 .footer a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+}
+
+.footer-made {
+    background: #4F4F4F;
+    color: #fff;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
 }
 
 /* CONTACT */
