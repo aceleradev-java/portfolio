@@ -1,6 +1,11 @@
 /* GENERAL */
 body {
     font-family: 'Roboto', sans-serif;
+    /* width: 100%; */
+}
+
+.header, main {
+    /* display: grid; */
 }
 
 /* HEADER */
@@ -10,26 +15,25 @@ body {
 
 .navbar {
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-gap: 10px;
-    align-items: center;
-}
-
-.navbar ul {
-    justify-self: end;
-}
-
-.container {
-    max-width: 820px;
+    grid-template-columns: 1fr minmax(auto, 150px) minmax(auto, 750px) 1fr;
     margin: auto;
 }
 
-ul.navbar_items {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
-    justify-content: space-between;
-    width: 350px;
+.navbar_logo {
+    grid-column: 2 / 3;
+    align-self: center;
+    justify-self: start;
+}
+
+.navbar_items {
+    grid-column: 3 / 4;
+    justify-self: end;
+    display: flex;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
 }
 
 .navbar_items li {
@@ -41,17 +45,21 @@ ul.navbar_items {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    padding: 10px 0 10px 20px;
 }
 
 .header_body {
     background: #7800FF;
-    display: grid;
-    justify-content: center;
-    text-align: center;
     color: #fff;
     padding: 35px;
     min-height: 28rem;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.header_body {
+    display: grid;
+    justify-content: center;
+    text-align: center;
 }
 
 .title, 
@@ -88,13 +96,12 @@ ul.navbar_items {
 
 /* MAIN */
 .main {
-    padding: 0;
-    padding: 0;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 900px) 1fr;
 }
 
 .main_item {
-    margin: 50px;
+    grid-column: 2 / 3;
 }
 
 .aceleradev p {
@@ -104,19 +111,19 @@ ul.navbar_items {
 }
 
 .main_item .title {
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 
 /* MAIN - Challenge */
 .challenges {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    justify-content: end;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 400px));
+    justify-content: space-between;
+    grid-gap: 50px;
 }
 
 .card {
-    padding: 30px;
+    padding: 35px;
     background: #4F4F4F;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -128,7 +135,6 @@ ul.navbar_items {
     grid-gap: 10px;
     grid-template-columns: 1fr 4fr;
     align-items: center;
-    box-sizing: border-box;
 }
 
 .card_header p {
