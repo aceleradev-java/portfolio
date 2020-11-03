@@ -178,13 +178,16 @@ body {
 
 .footer_nav {
     background: #7800FF;
-    padding: 10rem 5rem 2rem;
+    padding: 8rem 2rem 2rem;
 }
 
 .navbar-footer {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    padding-left: 0;
+    max-width: 900px;
+    margin: auto;
 }
 
 .footer a {
@@ -212,11 +215,16 @@ body {
         padding-left: 0;
     }
 
-    .navbar_items a {
+    .navbar_items a,
+    .navbar-footer a {
         padding: 5px;
     }
 
     .main_item {
         padding: 20px;
+    }
+
+    .navbar-footer {
+        justify-content: center;
     }
 }
