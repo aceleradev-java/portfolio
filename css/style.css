@@ -91,13 +91,10 @@ body {
 }
 
 /* MAIN */
-.main {
-    display: grid;
-    grid-template-columns: 1fr minmax(auto, 900px) 1fr;
-}
-
 .main_item {
-    grid-column: 2 / 3;
+    grid-column: 2 / 6;
+    max-width: 900px;
+    margin: auto;
 }
 
 .aceleradev p {
@@ -113,7 +110,7 @@ body {
 /* MAIN - Challenge */
 .challenges {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(auto, 400px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr ));
     justify-content: space-between;
     grid-gap: 50px;
 }
@@ -217,5 +214,9 @@ body {
 
     .navbar_items a {
         padding: 5px;
+    }
+
+    .main_item {
+        padding: 20px;
     }
 }
