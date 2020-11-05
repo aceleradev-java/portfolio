@@ -197,14 +197,20 @@ body {
 }
 
 .contact-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding: 0;
     margin: 0;
 }
 
 .contact-list li {
     list-style: none;
-    padding: 15px;
+    padding: 15px 0 15px 15px;
+}
+
+.contact-list svg {
+    max-width: 32px;
+    max-height: 32px;
 }
 
 @media (max-width: 920px) {
