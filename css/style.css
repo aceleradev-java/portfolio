@@ -213,6 +213,11 @@ body {
     max-height: 32px;
 }
 
+.footer-made p svg {
+    max-width: 16px;
+    max-height: 16px;
+}
+
 @media (max-width: 920px) {
     .navbar_logo {
         display: none;
